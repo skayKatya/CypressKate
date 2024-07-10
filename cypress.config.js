@@ -18,7 +18,7 @@ module.exports = defineConfig({
       openMode: 1,
     },
     setupNodeEvents(on, config) {
-      //on('test:after:run')
+      on('test:after:run')
     },
   },
 });
