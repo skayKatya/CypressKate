@@ -37,7 +37,7 @@ describe ('Sign up into Hillel', ()=> {
         welcomePage.getsignupName().type('  Kate  ')
         welcomePage.getsignupLastName().click()
         cy.get('div:nth-of-type(1) > .invalid-feedback > p')
-            .should('have.text', 'Name required')
+            .should('have.text', 'Name is invalid')
     })
 
     it ('Verify error about wrong data on Name field', ()=> {
@@ -70,6 +70,7 @@ describe ('Sign up into Hillel', ()=> {
 
     it ('Verify error about wrong data on Last Name field', ()=> {
         welcomePage.getsignupLastName().type('56')
+        welcomePage.getsignupName().click()
         cy.get('div:nth-of-type(2) > .invalid-feedback > p')
             .should('have.text', 'Last name is invalid')
         })
@@ -97,6 +98,7 @@ describe ('Sign up into Hillel', ()=> {
 
     it ('Verify error about wrong data on Email field', ()=> {
         welcomePage.getsignupEmail().type('g')
+        welcomePage.getsignupName().click()
         cy.get('div:nth-of-type(3) > .invalid-feedback > p')
             .should('have.text', 'Email is incorrect')
         })
@@ -117,6 +119,7 @@ describe ('Sign up into Hillel', ()=> {
 
     it ('Verify error about wrong data on Password field', ()=> {
         welcomePage.getsignupPassword().type('12345')
+        welcomePage.getsignupLastName().click()
         cy.get('div:nth-of-type(4) > .invalid-feedback > p')
             .should('have.text', 'Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter')
         })
