@@ -4,27 +4,27 @@ describe ('Header and Footer Buttons', ()=> {
       });
 
 
-    it ('HeaderButtons', ()=> {
+    it ('HeaderButtons Sign up on Welcome page should be visible', ()=> {
         cy.get('.hero-descriptor_btn')    
     })
 
-    it ('FooterButtonsFacebook', ()=> {
+    it ('FooterButtonsFacebook on Welcome page should be visible', ()=> {
         cy.get('.icon.icon-facebook')
     })
 
-    it ('FooterButtonsTelegram', ()=> {
+    it ('FooterButtonsTelegram on Welcome page should be visible', ()=> {
         cy.get('.icon.icon-telegram')
     })
 
-    it ('FooterButtonsYouTube', ()=> {
+    it ('FooterButtonsYouTube on Welcome page should be visible', ()=> {
         cy.get('.icon.icon-youtube')
     })
 
-    it ('FooterButtonsInstagram', ()=> {
+    it ('FooterButtonsInstagram on Welcome page should be visible', ()=> {
         cy.get('.icon.icon-instagram')
     })
 
-    it ('FooterButtonsLinkedIn', ()=> {
+    it ('FooterButtonsLinkedIn on Welcome page should be visible', ()=> {
         cy.get('.icon.icon-linkedin')
     })
 })
