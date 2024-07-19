@@ -12,6 +12,7 @@ module.exports = defineConfig({
   video: false,
   responseTimeout: 30000,
 
+
   e2e: {
     setupNodeEvents(on, config) {
       require("cypress-mochawesome-reporter/plugin")(on);
@@ -28,10 +29,10 @@ module.exports = defineConfig({
     // setupNodeEvents(on, config) {
     //   on('test:after:run')
     // },
-    baseUrl: 'https://guest:welcome2qauto@qauto.forstudy.space/',
+    baseUrl: 'https://guest:welcome2qauto@qauto2.forstudy.space/',
     env: {
-      login: 'kate@gmail.com',
-      password: '123!@#qweQWE'
+      login: 'kateTest@gmail.com',
+      password: '321!@#qweQWE'
     }
   },
 });
