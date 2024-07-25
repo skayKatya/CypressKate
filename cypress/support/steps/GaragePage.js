@@ -9,7 +9,7 @@ const garagePageSteps = {
         garagePage.getselectCarModel()
             .select(2)
         garagePage.getaddCarMileage()
-            .type('1000')
+           .type('1000')
         garagePage.getaddButton()
             .contains('Add').click()
     },
