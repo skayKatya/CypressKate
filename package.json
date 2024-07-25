@@ -16,5 +16,8 @@
     "cypress": "^13.12.0",
     "cypress-mochawesome-reporter": "^3.8.2",
     "prettier": "3.3.2"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.2"
   }
 }
